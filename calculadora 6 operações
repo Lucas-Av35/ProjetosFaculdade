@@ -1,0 +1,59 @@
+#include <stdio.h>
+
+// -----------------------------------------------------------------------------
+// Nome: Lucas Augusto
+// Data: 27/10/2025
+// Versão: 1
+// Descrição: Calcula 6 operacoes basicas com dois numeros.
+// -----------------------------------------------------------------------------
+
+int main()
+{
+    // Declaracao de variaveis simples
+    float num1, num2;
+    
+    // Titulo
+    printf("==========================================\n");
+    printf("  CALCULADORA DE RESULTADOS COMPLETOS\n");
+    printf("==========================================\n");
+
+    // 1. Entrada
+    printf("Digite o PRIMEIRO numero: ");
+    scanf("%f", &num1);
+    
+    printf("Digite o SEGUNDO numero: ");
+    scanf("%f", &num2);
+    
+    printf("\n------------------------------------------\n");
+    printf("  RESULTADOS DAS OPERACOES\n");
+    printf("------------------------------------------\n");
+
+
+    // 2.1 Soma
+    printf("Soma (%.2f + %.2f) = %.2f\n", num1, num2, num1 + num2);
+
+    // 2.2 Subtracao
+    printf("Subtracao (%.2f - %.2f) = %.2f\n", num1, num2, num1 - num2);
+
+    // 2.3 Multiplicacao
+    printf("Multiplicacao (%.2f * %.2f) = %.2f\n", num1, num2, num1 * num2);
+
+    // 2.4 Divisão (com verificacao de zero)
+    if (num2 != 0) {
+        printf("Divisao (%.2f / %.2f) = %.2f\n", num1, num2, num1 / num2);
+    } else {
+        printf("Divisao: O SEGUNDO numero (%.2f) nao pode ser zero.\n", num2);
+    }
+    
+    printf("------------------------------------------\n");
+
+    // 2.5 Quadrado (do PRIMEIRO numero)
+   
+    printf("Quadrado de %.2f = %.2f\n", num1, num1 * num1); 
+
+    // 2.6 Cubo (do PRIMEIRO numero)
+    printf("Cubo de %.2f = %.2f\n", num1, num1 * num1 * num1);
+
+    printf("==========================================\n");
+
+}
